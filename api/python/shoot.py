@@ -10,7 +10,7 @@ go_pro.shoot_video(5)
 go_pro.downloadAll()
 
 # ======== RECUPERER TT LES FICHIERS
-files = glob.glob("*.mp4")
+files = glob.glob("*.MP4")
 
 # ======== DEPLACER LES VIDEOS DANS LE DOSSIER VIDEOS
 shutil.move(files, "../videos/")
