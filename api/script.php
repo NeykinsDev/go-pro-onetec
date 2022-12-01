@@ -1,6 +1,6 @@
 <?php
 // EXECUTER LE SCRIPT
-exec("py ./python/shoot.py");
+// exec("py ./python/shoot.py");
 
 // ==================== METHODE 1 ====================
 // $videos = glob("*.mp4");
@@ -17,6 +17,7 @@ function triDeVideos($a, $b)
 {
   return filemtime($b) - filemtime($a);
 };
+print_r($mesVideos);
 usort($mesVideos, "triDeVideos");
 
 // foreach ($mesVideos as $key => $value) {
